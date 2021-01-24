@@ -1,0 +1,30 @@
+.mat-sidenav{
+    background-color: green;
+    background-image:linear-gradient(to right,#008000,#32CD32);
+    width:200px;
+    color: white;
+}
+
+.mat-sidenav-container{
+    height: 100%;
+}
+
+#wrapper{
+    background-color: green;
+    background-image:linear-gradient(to right,#008000,#32CD32);
+    display: flex;
+    color: white;
+    font-size: xx-large;
+    height: 50px;
+   padding: 20px;
+}
+
+#left{
+    font-size: xx-large;
+    flex: 0 0 37%
+}
+
+.mat-list-item{
+    padding: 10px;
+    font-size: large;
+}
