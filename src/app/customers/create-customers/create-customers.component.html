@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-8 col-md-offset-8">
+    <form [formGroup]="customerForm" ngNativeValidate (ngSubmit)="createCustomer()">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" formControlName="firstName" required />
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" formControlName="lastName" required />
+                </div>
+            </div>
+        </div>
+        <div formArrayName="phoneNumber">
+            <div class="row">
+            <div class="col-md-6 col-sm-6">
+            <div  class="form-group"> 
+                <label class="form-label">Phone number</label>
+                <input type="number" class="form-control" formControlName=0 />
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div  class="form-group"> 
+                <label class="form-label">Alternative phone number</label>
+                <input type="number" class="form-control" formControlName=1 />
+            </div>
+         </div>
+        </div>
+        </div>
+         <div class="col-md-6 col-sm-6">
+            <nav>
+                <ul id="horizontal-list">
+                  <li><a routerLink="/blouse-measurements" routerLinkActive="active">blouse measurements</a></li>
+                  <li><a routerLink="/pant-measurements" routerLinkActive="active">Pant Measurements</a></li>
+                </ul>
+              </nav>
+        </div> 
+        <div class="form-group">
+            <button type="submit" class="btn">Create</button>
+        </div>
+    </form>
+    <div>{{successfull}}</div>
+</div>
+</div>
+</div>

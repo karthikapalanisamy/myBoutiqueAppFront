@@ -1,0 +1,19 @@
+
+
+<table>
+
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone numbers</th>
+    </tr>
+
+    <tr *ngFor='let customer of customers'>
+        <td>{{customer.firstName}}</td>
+        <td>{{customer.lastName}}</td>
+        <td >
+            <div *ngFor='let phone of customer.phoneNumber'>{{phone.phone_num}}</div>
+        </td>
+    </tr>
+
+</table>
