@@ -10,3 +10,6 @@ ul#horizontal-list {
 	ul#horizontal-list li {
 		display: inline;
 	}
+#tabs{
+	margin-top: 20px;
+}

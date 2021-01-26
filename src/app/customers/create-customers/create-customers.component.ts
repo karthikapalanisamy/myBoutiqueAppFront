@@ -32,7 +32,6 @@ export class CreateCustomersComponent implements OnInit {
     
    this.customer=new Customers("","","");
   }
-
   public createCustomer(){
    console.log( this.customerForm.value);
 
@@ -51,5 +50,6 @@ export class CreateCustomersComponent implements OnInit {
        (res) => this.successfull="you have create the customer successfully"
      );
   }
+
 
 }

@@ -1,8 +1,8 @@
 .mat-sidenav{
-    background-color: green;
-    background-image:linear-gradient(to right,#008000,#32CD32);
-    width:200px;
-    color: white;
+    background-color:green;
+    /* background-image:linear-gradient(to right,#6ad86a,#9ef19e); */
+    width:fit-content;
+    color:white;
 }
 
 .mat-sidenav-container{
@@ -24,7 +24,6 @@
     flex: 0 0 37%
 }
 
-.mat-list-item{
-    padding: 10px;
-    font-size: large;
+#sections{
+    margin-top: 50px;
 }

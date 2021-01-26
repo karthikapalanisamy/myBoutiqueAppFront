@@ -11,6 +11,7 @@ import { CreateCustomersComponent } from './customers/create-customers/create-cu
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { BlouseMeasurementsComponent } from './Measurements/blouse-measurements/blouse-measurements.component';
+import { PantMeasurementsComponent } from './Measurements/pant-measurements/pant-measurements.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BlouseMeasurementsComponent } from './Measurements/blouse-measurements/
     MenuComponent,
     ListCustomersComponent,
     CreateCustomersComponent,
-    BlouseMeasurementsComponent
+    BlouseMeasurementsComponent,
+    PantMeasurementsComponent
   ],
   imports: [
     MaterialModule,

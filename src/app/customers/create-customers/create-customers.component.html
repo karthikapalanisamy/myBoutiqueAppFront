@@ -32,14 +32,11 @@
          </div>
         </div>
         </div>
-         <div class="col-md-6 col-sm-6">
-            <nav>
-                <ul id="horizontal-list">
-                  <li><a routerLink="/blouse-measurements" routerLinkActive="active">blouse measurements</a></li>
-                  <li><a routerLink="/pant-measurements" routerLinkActive="active">Pant Measurements</a></li>
-                </ul>
-              </nav>
-        </div> 
+
+        <mat-tab-group>
+            <mat-tab label="Blouse Measurements"> <div id="tabs"><app-blouse-measurements></app-blouse-measurements></div></mat-tab>
+            <mat-tab label="Pant Measurements"><div id="tabs"><app-pant-measurements> </app-pant-measurements> </div></mat-tab>
+          </mat-tab-group>
         <div class="form-group">
             <button type="submit" class="btn">Create</button>
         </div>
